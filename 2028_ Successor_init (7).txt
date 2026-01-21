@@ -332,4 +332,26 @@ document.body.background = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAA
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#ffffff!important;}</style>";
 
+campaignTrail_temp.musicOn = true
+campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/ZB4N8fbvbMH96ViSAmPMLO7QJ51PnWgH"
+
+
+document.getElementById("music_player").innerHTML = "<button onclick='music_play()'>Play Soundtrack</button>         <button onclick='music_pause()'>Pause</button><br><div style='font-size:0.75em'><input type='radio' name='jukebox' value='song0' checked='' onchange='jukeboxsong()'>Sin Eater - Penelope Scott</div><audio id='campaigntrailmusic' loop='false' style='display:none' src='' autoplay='false'></audio>"
+
+
+music_play = function() {
+        document.getElementById("campaigntrailmusic").play()
+}
+
+
+music_pause = function() {
+        document.getElementById("campaigntrailmusic").pause()
+}
+
+
+jukeboxsong = function() {
+        campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/ZB4N8fbvbMH96ViSAmPMLO7QJ51PnWgH"
+        document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
+}
+
 //#endcode
