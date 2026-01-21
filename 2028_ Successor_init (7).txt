@@ -336,7 +336,7 @@ campaignTrail_temp.musicOn = true
 campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/ZB4N8fbvbMH96ViSAmPMLO7QJ51PnWgH"
 
 
-document.getElementById("music_player").innerHTML = "<button onclick='music_play()'>Play Soundtrack</button>         <button onclick='music_pause()'>Pause</button><br><div style='font-size:0.75em'><input type='radio' name='jukebox' value='song0' checked='' onchange='jukeboxsong()'>Sin Eater - Penelope Scott</div><audio id='campaigntrailmusic' loop='false' style='display:none' src='' autoplay='false'></audio>"
+document.getElementById("music_player").innerHTML = "<button onclick='music_play()'>Play Soundtrack</button>         <button onclick='music_pause()'>Pause</button><br><div style='font-size:0.75em'><input type='radio' name='jukebox' value='song0' checked='' onchange='jukeboxsong()'>Time Of My Life - Penelope Scott</div><audio id='campaigntrailmusic' loop='false' style='display:none' src='' autoplay='false'></audio>"
 
 
 music_play = function() {
@@ -350,7 +350,7 @@ music_pause = function() {
 
 
 jukeboxsong = function() {
-        campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/ZB4N8fbvbMH96ViSAmPMLO7QJ51PnWgH"
+        campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/nq2fX1atvnHyN2eLxi42CeZN9Q63thNB"
         document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
 }
 
