@@ -962,7 +962,7 @@ campaignTrail_temp.states_json = [
             "name": "Wyoming",
             "abbr": "WY",
             "electoral_votes": 3,
-            "popular_votes": 11555849,
+            "popular_votes": 6555849,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
             "election": 20
@@ -2252,7 +2252,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 1029,
             "issue": 103,
-            "state_issue_score": -0.2,
+            "state_issue_score": 0,
             "weight": 1
         }
     },
@@ -2262,7 +2262,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 1029,
             "issue": 104,
-            "state_issue_score": -0.05,
+            "state_issue_score": 0,
             "weight": 1
         }
     },
@@ -5256,10 +5256,6 @@ Joshua D. Shapiro <p>
 [END]
 `;
     }
-    if(quickstats[0] == 306) {
-        setImage("https://i.imgur.com/Zs4mjTE_d.webp?maxwidth=760&fidelity=grand");
-        return `NOTHING EVER HAPPENS`;
-    }
     if(quickstats[0] == 269) {
         setImage("https://i.imgur.com/IffIPRW.jpeg");
         return `<div style='overflow-y:scroll;height:250px;'><h2>CONVERSATION BETWEEN JOE AND JILL BIDEN, NOVEMBER 8th, 2000.</h2><p>
@@ -5384,7 +5380,7 @@ campaignTrail_temp.jet_data = [{
         "canName": "Harris",
         "runName": "Shapiro",
         "runImage": "https://i.imgur.com/nMM3EeB_d.webp?maxwidth=760&fidelity=grand",
-        "canImage": "https://i.imgur.com/7Bz6wJz_d.webp?maxwidth=760&fidelity=grand"
+        "canImage": "https://snworksceo.imgix.net/dpn/07035f3f-a135-4184-a5c3-6916045cb4a3.sized-1000x1000.jpg?w=1000"
     },
     "endings_enabled": true,
     "ending_data": {
@@ -5423,15 +5419,6 @@ campaignTrail_temp.jet_data = [{
             "endingImage": "https://i.imgur.com/P9Sr6BL.jpeg",
             "endingText": "<p>\nPhone Conversation on December 19, 2030 <p>\n(After President Harris' narrow election victory, the Republicans would still hold the House and Senate. Her first full term would still be under total gridlock on the domestic front. Her term was dedicated solely on foreign policy. Alleged illegal arms deals through the EU to Neutral Ukraine would lead to her impeachment. She would be defeated in a landslide by Senator Cassidy in the 2032 Election.)<p>\n\n[START] <p>\n\n[HARRIS]: We have less than a month before the new Congress is sworn in, and once they are, it's almost certain I'll be impeached. <p>\n[FLAKE]: Look, I know things are hard right now, but it's not guaranteed they'll find anything to move it to a vote, they're just investigating. <p>\n[HARRIS]: Are you kidding? These people are vicious, they'll never let us do anything. They'd let the country stagnate and collapse so they could swoop in to prove that they were right. You're a Republican yourself, you know this more than anyone. <p>\n[FLAKE]: Look, err.... I know you only picked me because they wouldn't let you pick anyone else, but ---- <p>\n[HARRIS]: I thought we could agree on this one thing, just because Russia isn't drone bombing Kyiv anymore doesn't mean there aren't constant skirmishes along the Dnipro. Ukraine is essential for Europe's defence, surely you understand this? <p>\n[FLAKE]: Look, if you care so much about your parties standing so much, don't run for reelection, you're..... not exactly popular. <p>\n[HARRIS]: You think I haven't thought about that? I'm not fucking Biden, I can step down when I want. <p>\n[FLAKE]: Look... I won't testify against you, but ------- [PHONE DISCONNECTS] <p>\n\n[END]\n",
             "amount": "270"
-        },
-        "1768898737591": {
-            "id": 1768898737591,
-            "variable": "0",
-            "operator": "==",
-            "value": 0,
-            "endingImage": "https://i.imgur.com/Zs4mjTE_d.webp?maxwidth=760&fidelity=grand",
-            "endingText": "NOTHING EVER HAPPENS",
-            "amount": "306"
         },
         "1768898770241": {
             "id": 1768898770241,
