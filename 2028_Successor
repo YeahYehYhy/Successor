@@ -311,7 +311,7 @@ jet_data = {
     "headerColor": "#000000",
     "windowColor": "#0f0f0f",
     "containerColor": "#000000",
-    "innerWindowColor": "#575757",
+    "innerWindowColor": "#ffffff",
     "bannerImageUrl": "https://i.imgur.com/UpeDNXS.jpeg",
     "backgroundImageUrl": "https://i.imgur.com/Dhiggwy.jpeg",
     "endingTextColor": "#000000",
