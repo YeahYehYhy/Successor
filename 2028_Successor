@@ -337,7 +337,7 @@ $(".container")[0].style.backgroundColor = "#000000";
 
 document.getElementById("header").src = "https://i.imgur.com/UpeDNXS.jpeg";
 
-document.body.background = "https://i.imgur.com/MQR99Au.jpeg";
+document.body.background = "https://i.imgur.com/Dhiggwy.jpeg";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#575757!important;}</style>";
 
