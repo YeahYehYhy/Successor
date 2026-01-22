@@ -316,7 +316,7 @@ jet_data = {
 corrr = '\n              <h2>[ Successor ]</h2><font id="wittyquote" size="4" color="white"><em>"What Can Be, Unburdened By What Has Been"</em></font>\n            ';
 
 
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#ffffff";
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#000000";
 
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#0f0f0f";
 
@@ -331,5 +331,27 @@ document.getElementById("header").src = "https://i.imgur.com/UpeDNXS.jpeg";
 document.body.background = "https://i.imgur.com/MQR99Au.jpeg";
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#575757!important;}</style>";
+
+campaignTrail_temp.musicOn = true
+campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/nq2fX1atvnHyN2eLxi42CeZN9Q63thNB"
+
+
+document.getElementById("music_player").innerHTML = "<button onclick='music_play()'>Play Soundtrack</button>         <button onclick='music_pause()'>Pause</button><br><div style='font-size:0.75em'><input type='radio' name='jukebox' value='song0' checked='' onchange='jukeboxsong()'>Time Of My Life - Penelope Scott</div><audio id='campaigntrailmusic' loop='false' style='display:none' src='' autoplay='false'></audio>"
+
+
+music_play = function() {
+        document.getElementById("campaigntrailmusic").play()
+}
+
+
+music_pause = function() {
+        document.getElementById("campaigntrailmusic").pause()
+}
+
+
+jukeboxsong = function() {
+        campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/nq2fX1atvnHyN2eLxi42CeZN9Q63thNB"
+        document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
+}
 
 //#endcode
