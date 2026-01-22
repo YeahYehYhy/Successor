@@ -962,7 +962,7 @@ campaignTrail_temp.states_json = [
             "name": "Wyoming",
             "abbr": "WY",
             "electoral_votes": 3,
-            "popular_votes": 6555849,
+            "popular_votes": 299849,
             "poll_closing_time": 180,
             "winner_take_all_flg": 1,
             "election": 20
