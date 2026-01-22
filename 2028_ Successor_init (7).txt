@@ -1,3 +1,13 @@
+campaignTrail_temp.modBoxTheme = {
+     "header_color": "#363636",
+     "header_text_color": "#ffffff",
+     "description_text_color": "#ffffff",
+     "description_background_color": "000000",
+     "main_color": "#000000",
+     "secondary_color": "#363636",
+     "ui_text_color": "#ffffff"
+}
+
 campaignTrail_temp.global_parameter_json = [
     {
         "model": "campaign_trail.global_parameter",
