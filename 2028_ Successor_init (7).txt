@@ -313,7 +313,7 @@ jet_data = {
     "windowColor": "#ffffff",
     "containerColor": "#000000",
     "innerWindowColor": "#ffffff",
-    "bannerImageUrl": "https://i.imgur.com/PdHAfQD.png",
+    "bannerImageUrl": "https://https://i.imgur.com/Dhiggwy.jpeg",
     "backgroundImageUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAACICAMAAADNhJDwAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA3A8UYAAEH59SKAAAAAElFTkSuQmCC",
     "endingTextColor": "#000000",
     "customQuote": "\"What Can Be, Unburdened By What Has Been\"",
