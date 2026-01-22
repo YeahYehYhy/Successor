@@ -7,7 +7,6 @@ campaignTrail_temp.modBoxTheme = {
      "secondary_color": "#363636",
      "ui_text_color": "#ffffff"
 }
-
 campaignTrail_temp.global_parameter_json = [
     {
         "model": "campaign_trail.global_parameter",
