@@ -314,7 +314,7 @@ jet_data = {
     "innerWindowColor": "#ffffff",
     "bannerImageUrl": "https://i.imgur.com/UpeDNXS.jpeg",
     "backgroundImageUrl": "https://i.imgur.com/Dhiggwy.jpeg",
-    "endingTextColor": "#000000",
+    "endingTextColor": "#ffffff",
     "customQuote": "\"What Can Be, Unburdened By What Has Been\"",
     "gameTitle": "[ Successor ]"
 }
