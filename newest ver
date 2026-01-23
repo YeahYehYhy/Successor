@@ -4,7 +4,7 @@ campaignTrail_temp.questions_json = [
         "pk": 20681,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "[OCTOBER 3 2026] With the Administration's approval ratings having been in a free fall since Biden's medical emergency at the State of the Union, the Party is on it's way to it's worst midterm performance since 2010. Yet again, the party is in total revolt. Nearly every major Democratic party official has called for Biden's resignation. The party and electorate demands for you to betray the man you've been so loyal to for 6 years, what do you do now?",
             "likelihood": 1
         }
     },
@@ -13,7 +13,7 @@ campaignTrail_temp.questions_json = [
         "pk": 20682,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "[OCTOBER 13 2026] You chose for the Inauguration to be a public event, but you are not rewarded with the fanfare of typical Presidents. The mood is solemn, the air is cold and still, your body feels mechanical and forced in its movements as you are sworn in.  The crowds are silent as they wait expectantly. You need to say something.",
             "likelihood": 1
         }
     },
@@ -22,7 +22,7 @@ campaignTrail_temp.questions_json = [
         "pk": 20683,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "[NOVEMBER 4 2026] While most of the party has managed to coalesce around you in the weeks following your inauguration, the party has still suffered a potentially Presidency ending midterm loss. With the Senate 56-42, and the Republicans breaking 240 seats, whatever little leverage you had in Congress is now non-existent. ",
             "likelihood": 1
         }
     },
@@ -31,7 +31,7 @@ campaignTrail_temp.questions_json = [
         "pk": 20684,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "[JANUARY 26 2027] Hearings regarding the vacant Vice Presidency which you once held, have largely been stalled in committee. Thune and Johnson have said that they will block any \"radical\" appointments. However, this may be the perfect opportunity to shore up support from your left flank, how will you navigate this issue?",
             "likelihood": 1
         }
     },
@@ -259,7 +259,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20710,
         "fields": {
             "question": 20681,
-            "description": "put description here"
+            "description": "Frankly, this situation has been horrific in its implications. But forcing Biden out won't do us any good. Send out a statement where I disavow any attempt to undermine the President. We need to nip this in the bud as soon as possible."
         }
     },
     {
@@ -267,7 +267,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20712,
         "fields": {
             "question": 20682,
-            "description": "put description here"
+            "description": "Look, the nation is not in a great spot right now. We need to be honest as we ask for peace and healing. We must face the people and tell them what we're dealing with, what we must confront together. Maybe they'll appreciate our honesty, for once."
         }
     },
     {
@@ -275,7 +275,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20713,
         "fields": {
             "question": 20683,
-            "description": "put description here"
+            "description": "God, this was a disaster. It's gonna be a pain in the ass dealing with Congress now, but think of how much worse it would've been if Biden never stepped down. We need to use this as an opportunity to get the party to fully come together as a united front. Make them the bigger threat, like how Bernie and Biden came together after the  primaries."
         }
     },
     {
@@ -283,7 +283,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20714,
         "fields": {
             "question": 20684,
-            "description": "put description here"
+            "description": "Those motherfuckers Thune and Johnson will stop us from doing anything even slightly left of center. Just get Shapiro as our guy, they wouldn't dare reject a centrist who served in the IDF."
         }
     },
     {
@@ -300,6 +300,78 @@ campaignTrail_temp.answers_json = [
         "fields": {
             "question": 20708,
             "description": "put description here"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20719,
+        "fields": {
+            "question": 20681,
+            "description": "We need to stall. Get my staff to send out a message to Party officials that i'm considering my options. Try to get Biden's family on our side, they care about him and his well-being, don't they?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20734,
+        "fields": {
+            "question": 20682,
+            "description": "I don't need to make this speech for the ages. We need to defend our record. I know the people don't think we did much, but we need to highlight our accomplishments, remind them of how worse it could be under someone like Trump. We're proud of our work saving democracy, right?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20737,
+        "fields": {
+            "question": 20682,
+            "description": "I know it's not 2019 anymore, but I need to go back to my roots. Back then, I was an ardent progressive. We need to lend a hand to America's downtrodden, the ones yearning for peace and change. Maybe this time, we can make it right."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20742,
+        "fields": {
+            "question": 20681,
+            "description": "He sidelined me for my entire tenure. Publicly call for his resignation, privately threaten him with the 25th. We need to get out of this hole we've dug for ourselves."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20744,
+        "fields": {
+            "question": 20683,
+            "description": "Get rid of Schumer. That motherfucker would never have the courage to filibuster any bill those Republicans send up. I'll endorse any Senator that tries to replace him. It'll help us among the left-flank, anyway."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20745,
+        "fields": {
+            "question": 20683,
+            "description": "The mess that Biden left us is insane. I hate to say it, but Joe's the reason we're in this situation. We need to shift the blame away from me, and towards him. He already gets enough shit, he won't care."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20746,
+        "fields": {
+            "question": 20683,
+            "description": "This is gonna be a tough pill for the left to swallow, but we need to start being more bipartisan. Obama was forced to the center dealing with Congress, and he still had a 60 percent approval rating. This isn't to say we should concede, but we need to start negotiating. We don't want another month-long shutdown, do we?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20758,
+        "fields": {
+            "question": 20684,
+            "description": "Honestly, I don't give a single fuck what Thune or anyone else says. I need to reinvent myself. Submit Khanna as my nominee. Those fucking bastards will have a field day with this."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20759,
+        "fields": {
+            "question": 20684,
+            "description": "Surely we can get a compromise here, right? Get some moderate from a Blue State who we can easily replace. Shapiro is too far for the progressives, it'll only inflame the Palestine issue. They'll be seen as partisan assholes if they reject our guy. Make sure they're unknown, so that I won't get too much flack from the media."
         }
     }
 ]
@@ -5124,13 +5196,312 @@ campaignTrail_temp.candidate_state_multiplier_json = [
     }
 ]
 
-campaignTrail_temp.answer_score_global_json = []
+campaignTrail_temp.answer_score_global_json = [
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20723,
+        "fields": {
+            "answer": 20719,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.01275
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20733,
+        "fields": {
+            "answer": 20712,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20736,
+        "fields": {
+            "answer": 20734,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20739,
+        "fields": {
+            "answer": 20737,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.009
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20740,
+        "fields": {
+            "answer": 20737,
+            "candidate": 201,
+            "affected_candidate": 203,
+            "global_multiplier": -0.035
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20741,
+        "fields": {
+            "answer": 20710,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -100
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20748,
+        "fields": {
+            "answer": 20745,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20751,
+        "fields": {
+            "answer": 20744,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20752,
+        "fields": {
+            "answer": 20744,
+            "candidate": 201,
+            "affected_candidate": 203,
+            "global_multiplier": -0.025
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20753,
+        "fields": {
+            "answer": 20746,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": -0.0015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20754,
+        "fields": {
+            "answer": 20746,
+            "candidate": 201,
+            "affected_candidate": 203,
+            "global_multiplier": 0.04
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20755,
+        "fields": {
+            "answer": 20713,
+            "candidate": 201,
+            "affected_candidate": 203,
+            "global_multiplier": -0.02
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20757,
+        "fields": {
+            "answer": 20713,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "global_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20761,
+        "fields": {
+            "answer": 20714,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20762,
+        "fields": {
+            "answer": 20714,
+            "candidate": 201,
+            "affected_candidate": 203,
+            "global_multiplier": 0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20764,
+        "fields": {
+            "answer": 20758,
+            "candidate": 201,
+            "affected_candidate": 203,
+            "global_multiplier": -0.05
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20766,
+        "fields": {
+            "answer": 20759,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.015
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20767,
+        "fields": {
+            "answer": 20759,
+            "candidate": 201,
+            "affected_candidate": 203,
+            "global_multiplier": 0.035
+        }
+    }
+]
 
 campaignTrail_temp.answer_score_issue_json = []
 
 campaignTrail_temp.answer_score_state_json = []
 
-campaignTrail_temp.answer_feedback_json = []
+campaignTrail_temp.answer_feedback_json = [
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20717,
+        "fields": {
+            "answer": 20710,
+            "candidate": 201,
+            "answer_feedback": "The public backlash at your defense of Biden is immediate and immense. You receive little to no sleep as you spend hours taking calls from donors, high-ranking officials, and certain members of Congress. After a week of total chaos, you finally threaten Biden with the 25th. He resigns 3 days later."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20722,
+        "fields": {
+            "answer": 20719,
+            "candidate": 201,
+            "answer_feedback": "Jill and Hunter flatly tell you that it's Joe's decision alone if he wishes to resign the Presidency, and they refuse to influence his decision. After more than a week of chaotic confusion among the Party, you finally threaten him with the 25th. He resigns shortly after."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20732,
+        "fields": {
+            "answer": 20712,
+            "candidate": 201,
+            "answer_feedback": "It's hard to find your voice as you practically beg and plead for more patience as you try to tell them the truth. As you talk of overcoming decline and malaise, of healing division, the nation turns away, silent. They've heard this a million times before."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20735,
+        "fields": {
+            "answer": 20734,
+            "candidate": 201,
+            "answer_feedback": "You see it in their eyes, anger, fear, bitterness. As you rattle off the small list of achievements Biden had, you realize your mistake. The people have no more patience left for failure. The endless masses jeer at you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20738,
+        "fields": {
+            "answer": 20737,
+            "candidate": 201,
+            "answer_feedback": "The nation has heard so little from you as Vice President that they're shocked you still sound like yourself 7 years ago. That being said, a single speech isn't enough to heal 7 years of broken trust. The nation turns away, leaving you to wallow in your failures."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20743,
+        "fields": {
+            "answer": 20742,
+            "candidate": 201,
+            "answer_feedback": "As you imply that the 25th would not be off the table in the coming weeks, Biden goes ballistic. He raises his voice as much as his age allows and rambles about how you would never be where you are without him, about how he had always known you weren't loyal. You stare at him silently, with a look of pity and guilt, he knows the walls are caving in. He eventually asks for 10 days to prepare for his departure. You agree."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20747,
+        "fields": {
+            "answer": 20745,
+            "candidate": 201,
+            "answer_feedback": "Joe's already too busy moping with his loving family, dogs, nice house and peaceful retirement to care that you're throwing him under the bus. He knows this is all his fault, anyway. His aides, however, do. They leak exaggerated stories of dysfunction and betrayal regarding you and Biden to the press. Nobody cares."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20749,
+        "fields": {
+            "answer": 20713,
+            "candidate": 201,
+            "answer_feedback": "You met with Sanders, Ocasio-Cortez, and Mamdani in New York to discuss how to change your messaging to appeal to the progressive youth. You leave with nothing set in stone, zero connections made, and no new knowledge. You have a permanent scowl on your face as you fly back to D.C. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20750,
+        "fields": {
+            "answer": 20744,
+            "candidate": 201,
+            "answer_feedback": "Van Hollen announces his intention to dethrone Schumer as Senate Minority Leader. Your quick endorsement of him shocks those close to you and you immediately get a storm of calls from disgruntled donors. The progressives, however, seem to respect you just a little more."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20756,
+        "fields": {
+            "answer": 20746,
+            "candidate": 201,
+            "answer_feedback": "The left decries your centrist turn as more and more disillusioned progressives move away from you, voting for spoilers or swearing off electoralism like they would ever try to start a revolution. You find yourself with more left-wing hecklers at more of your rallies. At least FOX isn't as vicious with their attacks on your Administration."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20760,
+        "fields": {
+            "answer": 20714,
+            "candidate": 200,
+            "answer_feedback": "Luckily, they don't even bother making a stink of it in committee and confirmation, seeing him as more of a liability to you than anything. Pro-Palestinian protesters yell at you outside the hotel you're staying at. They some fucking how found out where you're staying. They call you a Zionist, a fascist no better than the Republicans. You don't lose that much sleep, though."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20763,
+        "fields": {
+            "answer": 20758,
+            "candidate": 200,
+            "answer_feedback": "Obviously, the cunts wouldn't even consider it. You're blasted as a delusional far left lunatic by the right wing media. You're branded an anti-semite by Shapiro supporters (All four of them). You eventually concede and nominate Shapiro, who gets confirmed pretty quickly. At least the blow back from Progressives wasn't that bad."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20765,
+        "fields": {
+            "answer": 20759,
+            "candidate": 200,
+            "answer_feedback": "They get past committee, but Mike Johnson orders the Republican caucus to shoot them down in the house. The public backlash towards the Republicans are minimal but still help your flagging poll numbers. You nominate Shapiro and he flies to confirmation."
+        }
+    }
+]
 
 campaignTrail_temp.candidate_image_url = "https://i.imgur.com/klY7TmP_d.webp?maxwidth=760&fidelity=grand";
 campaignTrail_temp.running_mate_image_url = "https://i.imgur.com/oYzte1B.jpeg";
