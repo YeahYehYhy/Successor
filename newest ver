@@ -1,19 +1,64 @@
+
+campaignTrail_temp.cyoa = true;
+
+function getQuestionNumberFromPk(pk) {
+    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
+}
+
+cyoAdventure = function (a) {
+    ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+
+    if (ans == 20793) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20686);
+    }
+    else if (ans == 20794) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20687);
+    }
+    else if (ans == 20715) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20688);
+    }
+    else if (ans == 20712) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20682);
+    }
+    else if (ans == 20843) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else if (ans == 20844) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else if (ans == 20845) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else if (ans == 20846) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else if (ans == 20847) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else if (ans == 20848) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else if (ans == 20849) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else if (ans == 20850) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else if (ans == 20851) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(20689);
+    }
+    else {
+        return false;
+    }
+}
+
 campaignTrail_temp.questions_json = [
-    {
-        "model": "campaign_trail.question",
-        "pk": 20681,
-        "fields": {
-            "priority": 0,
-            "description": "[OCTOBER 3 2026] With the Administration's approval ratings having been in a free fall since Biden's medical emergency at the State of the Union, the Party is on it's way to it's worst midterm performance since 2010. Yet again, the party is in total revolt. Nearly every major Democratic party official has called for Biden's resignation. The party and electorate demands for you to betray the man you've been so loyal to for 6 years, what do you do now?",
-            "likelihood": 1
-        }
-    },
     {
         "model": "campaign_trail.question",
         "pk": 20682,
         "fields": {
             "priority": 0,
-            "description": "[OCTOBER 13 2026] You chose for the Inauguration to be a public event, but you are not rewarded with the fanfare of typical Presidents. The mood is solemn, the air is cold and still, your body feels mechanical and forced in its movements as you are sworn in.  The crowds are silent as they wait expectantly. You need to say something.",
+            "description": "[OCTOBER 13 2026] You chose for the Inauguration to be a public event, but you are not rewarded with the fanfare of typical Presidents. The mood is solemn, the air is cold and still, your body feels mechanical and forced in its movements as you are sworn in. The crowds are silent as they wait expectantly. You need to say something.",
             "likelihood": 1
         }
     },
@@ -22,7 +67,7 @@ campaignTrail_temp.questions_json = [
         "pk": 20683,
         "fields": {
             "priority": 0,
-            "description": "[NOVEMBER 4 2026] While most of the party has managed to coalesce around you in the weeks following your inauguration, the party has still suffered a potentially Presidency ending midterm loss. With the Senate 56-42, and the Republicans breaking 240 seats, whatever little leverage you had in Congress is now non-existent. ",
+            "description": "[NOVEMBER 4 2026] While most of the party has managed to coalesce around you in the weeks following your inauguration, the party has still suffered a potentially Presidency ending midterm loss. With the Senate 54-46, and the Republicans breaking 240 seats, whatever little leverage you had in Congress is now non-existent. ",
             "likelihood": 1
         }
     },
@@ -39,8 +84,8 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 20685,
         "fields": {
-            "priority": 0,
-            "description": "put description here",
+            "priority": 1,
+            "description": "[MARCH 15 2027] It's been 4 months since your inauguration, and you've done nothing but sit still as a placeholder President. The media is still hounding you for every move you make, and you desperately need a win. With what little policy deviations you've made from Biden being dead in the water, Blinken advises you to direct focus to foreign policy. The question is, what region will you focus on?",
             "likelihood": 1
         }
     },
@@ -49,7 +94,7 @@ campaignTrail_temp.questions_json = [
         "pk": 20686,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "RUSSIA",
             "likelihood": 1
         }
     },
@@ -58,7 +103,7 @@ campaignTrail_temp.questions_json = [
         "pk": 20687,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "VENEZULA",
             "likelihood": 1
         }
     },
@@ -67,7 +112,7 @@ campaignTrail_temp.questions_json = [
         "pk": 20688,
         "fields": {
             "priority": 0,
-            "description": "put description here",
+            "description": "GAZA",
             "likelihood": 1
         }
     },
@@ -244,24 +289,70 @@ campaignTrail_temp.questions_json = [
     },
     {
         "model": "campaign_trail.question",
-        "pk": 20708,
+        "pk": 20814,
         "fields": {
             "priority": 0,
             "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20815,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20816,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20852,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20853,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20854,
+        "fields": {
+            "priority": 0,
+            "description": "put description here",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 20855,
+        "fields": {
+            "priority": 0,
+            "description": "[NOVEMBER 1 2028] With the final week before the election, your campaign is operating as hard as possible. CNN and FOX still trade blows between each other as volunteers manage social media accounts and knock on doors. There's still time to finish this on the right note.",
             "likelihood": 1
         }
     }
 ]
 
 campaignTrail_temp.answers_json = [
-    {
-        "model": "campaign_trail.answer",
-        "pk": 20710,
-        "fields": {
-            "question": 20681,
-            "description": "Frankly, this situation has been horrific in its implications. But forcing Biden out won't do us any good. Send out a statement where I disavow any attempt to undermine the President. We need to nip this in the bud as soon as possible."
-        }
-    },
     {
         "model": "campaign_trail.answer",
         "pk": 20712,
@@ -275,7 +366,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20713,
         "fields": {
             "question": 20683,
-            "description": "God, this was a disaster. It's gonna be a pain in the ass dealing with Congress now, but think of how much worse it would've been if Biden never stepped down. We need to use this as an opportunity to get the party to fully come together as a united front. Make them the bigger threat, like how Bernie and Biden came together after the  primaries."
+            "description": "This was a disaster. It's gonna be a pain in the ass dealing with Congress now, but think of how much worse it would've been if Biden never stepped down. We need to use this as an opportunity to get the party to fully come together as a united front. Make them the bigger threat, like how Bernie and Biden came together after the primaries."
         }
     },
     {
@@ -283,7 +374,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20714,
         "fields": {
             "question": 20684,
-            "description": "Those motherfuckers Thune and Johnson will stop us from doing anything even slightly left of center. Just get Shapiro as our guy, they wouldn't dare reject a centrist who served in the IDF."
+            "description": "Thune and Johnson will stop us from doing anything even slightly left of center. Just get Shapiro as our guy, they wouldn't dare reject a centrist who served in the IDF."
         }
     },
     {
@@ -291,23 +382,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20715,
         "fields": {
             "question": 20685,
-            "description": "put description here"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 20716,
-        "fields": {
-            "question": 20708,
-            "description": "put description here"
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 20719,
-        "fields": {
-            "question": 20681,
-            "description": "We need to stall. Get my staff to send out a message to Party officials that i'm considering my options. Try to get Biden's family on our side, they care about him and his well-being, don't they?"
+            "description": "It's been a year since the ceasefire in Gaza, and the humanitarian situation there is still horrible for the population. I want more aid sent to the Gaza Strip. We need a framework for an eventual reconstruction effort to maintain stability in that region in the coming years. If Bibi tries to oppose us, threaten him. I don't want that bastard thinking he can run rings around me like he did Biden."
         }
     },
     {
@@ -323,15 +398,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20737,
         "fields": {
             "question": 20682,
-            "description": "I know it's not 2019 anymore, but I need to go back to my roots. Back then, I was an ardent progressive. We need to lend a hand to America's downtrodden, the ones yearning for peace and change. Maybe this time, we can make it right."
-        }
-    },
-    {
-        "model": "campaign_trail.answer",
-        "pk": 20742,
-        "fields": {
-            "question": 20681,
-            "description": "He sidelined me for my entire tenure. Publicly call for his resignation, privately threaten him with the 25th. We need to get out of this hole we've dug for ourselves."
+            "description": "I know it's not 2019 anymore, but I need to go back to my roots. Back then, I was an ardent progressive. We need to lend a hand to America's downtrodden, the ones yearning for peace and change. The nation doesn't want more of the same, they want to see a difference. Avoid mentioning Biden at all. Maybe this time we can make it right."
         }
     },
     {
@@ -347,7 +414,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20745,
         "fields": {
             "question": 20683,
-            "description": "The mess that Biden left us is insane. I hate to say it, but Joe's the reason we're in this situation. We need to shift the blame away from me, and towards him. He already gets enough shit, he won't care."
+            "description": "The mess that Biden left us is nearly irrecoverable. I hate to say it, but Joe's the reason we're in this situation. We need to shift the blame away from me, and towards him. He already gets enough shit, he won't care."
         }
     },
     {
@@ -363,7 +430,7 @@ campaignTrail_temp.answers_json = [
         "pk": 20758,
         "fields": {
             "question": 20684,
-            "description": "Honestly, I don't give a single fuck what Thune or anyone else says. I need to reinvent myself. Submit Khanna as my nominee. Those fucking bastards will have a field day with this."
+            "description": "Honestly, I don't care what Thune or anyone else says. I need to reinvent myself in the eyes of the Left. Submit Khanna as my nominee. Those motherfuckers will have a field day with this."
         }
     },
     {
@@ -371,7 +438,127 @@ campaignTrail_temp.answers_json = [
         "pk": 20759,
         "fields": {
             "question": 20684,
-            "description": "Surely we can get a compromise here, right? Get some moderate from a Blue State who we can easily replace. Shapiro is too far for the progressives, it'll only inflame the Palestine issue. They'll be seen as partisan assholes if they reject our guy. Make sure they're unknown, so that I won't get too much flack from the media."
+            "description": "Surely we can get a compromise here, right? Get some moderate from a Blue State who we can easily replace. Shapiro is too far for the progressives, it'll only inflame the Palestine issue. They'll be seen as assholes if they reject our guy. Make sure they're unknown, so that I won't get too much flack from the media."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20793,
+        "fields": {
+            "question": 20685,
+            "description": "Russia has been trapped in a war of its own making for more than 5 years now. They've made no progress since taking Pokrovsk, and the situation in both nations has been in decline. Restarting diplomatic talks is the only way to end this war. Get Europe to start aiding Ukraine even more, we're doing enough as is."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20794,
+        "fields": {
+            "question": 20685,
+            "description": "Venezuela is in a precarious position. Maduro's been sitting pretty in his little dictator palace thinking we won't do anything to him. He's been a thorn in our side for years, nobody in his own country likes him. The sanctions we have aren't enough, I want to destroy him."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20843,
+        "fields": {
+            "question": 20686,
+            "description": "RUSSIA 1"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20844,
+        "fields": {
+            "question": 20686,
+            "description": "RUSSIA 2"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20845,
+        "fields": {
+            "question": 20686,
+            "description": "RUSSIA 3"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20846,
+        "fields": {
+            "question": 20687,
+            "description": "VENEZUELA 1"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20847,
+        "fields": {
+            "question": 20687,
+            "description": "VENEZUELA 2"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20848,
+        "fields": {
+            "question": 20687,
+            "description": "VENEZUELA 3"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20849,
+        "fields": {
+            "question": 20688,
+            "description": "GAZA 1"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20850,
+        "fields": {
+            "question": 20688,
+            "description": "GAZA 2"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20851,
+        "fields": {
+            "question": 20688,
+            "description": "GAZA 3"
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20856,
+        "fields": {
+            "question": 20855,
+            "description": "We need to win back those union workers, the blue collars and farmers. We gotta remind them of the old days, when the Democrats were the party of the working class. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20865,
+        "fields": {
+            "question": 20855,
+            "description": "We have to win back those Latinos, guys. A frightening amount of them intend to vote for Vance this election. I'll barnstorm the Southwest with Kelly, Castro, and Gallego. We need to address their concerns and explain ourselves."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20872,
+        "fields": {
+            "question": 20855,
+            "description": "Get me to the South. They know what it means to serve their country. We have to be in the rural countryside, in the reddest of counties and districts. We have to let them know we haven't forgotten them."
+        }
+    },
+    {
+        "model": "campaign_trail.answer",
+        "pk": 20877,
+        "fields": {
+            "question": 20855,
+            "description": "Just send me to Delaware for one last rally. I have someone i'd like to talk to."
         }
     }
 ]
@@ -5199,16 +5386,6 @@ campaignTrail_temp.candidate_state_multiplier_json = [
 campaignTrail_temp.answer_score_global_json = [
     {
         "model": "campaign_trail.answer_score_global",
-        "pk": 20723,
-        "fields": {
-            "answer": 20719,
-            "candidate": 201,
-            "affected_candidate": 201,
-            "global_multiplier": -0.01275
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
         "pk": 20733,
         "fields": {
             "answer": 20712,
@@ -5245,16 +5422,6 @@ campaignTrail_temp.answer_score_global_json = [
             "candidate": 201,
             "affected_candidate": 203,
             "global_multiplier": -0.035
-        }
-    },
-    {
-        "model": "campaign_trail.answer_score_global",
-        "pk": 20741,
-        "fields": {
-            "answer": 20710,
-            "candidate": 201,
-            "affected_candidate": 201,
-            "global_multiplier": -100
         }
     },
     {
@@ -5334,7 +5501,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 20714,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": 0.01
+            "global_multiplier": 0.0175
         }
     },
     {
@@ -5353,8 +5520,8 @@ campaignTrail_temp.answer_score_global_json = [
         "fields": {
             "answer": 20758,
             "candidate": 201,
-            "affected_candidate": 203,
-            "global_multiplier": -0.05
+            "affected_candidate": 201,
+            "global_multiplier": 0.011
         }
     },
     {
@@ -5364,7 +5531,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 20759,
             "candidate": 201,
             "affected_candidate": 201,
-            "global_multiplier": 0.015
+            "global_multiplier": 0.01
         }
     },
     {
@@ -5376,32 +5543,227 @@ campaignTrail_temp.answer_score_global_json = [
             "affected_candidate": 203,
             "global_multiplier": 0.035
         }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20797,
+        "fields": {
+            "answer": 20715,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20798,
+        "fields": {
+            "answer": 20793,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20799,
+        "fields": {
+            "answer": 20794,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20804,
+        "fields": {
+            "answer": 20758,
+            "candidate": 203,
+            "affected_candidate": 201,
+            "global_multiplier": 0.07
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20858,
+        "fields": {
+            "answer": 20856,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20867,
+        "fields": {
+            "answer": 20865,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20874,
+        "fields": {
+            "answer": 20872,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.003
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_global",
+        "pk": 20879,
+        "fields": {
+            "answer": 20877,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "global_multiplier": 0.006
+        }
     }
 ]
 
 campaignTrail_temp.answer_score_issue_json = []
 
-campaignTrail_temp.answer_score_state_json = []
+campaignTrail_temp.answer_score_state_json = [
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20859,
+        "fields": {
+            "answer": 20856,
+            "state": 1021,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20860,
+        "fields": {
+            "answer": 20856,
+            "state": 1049,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20861,
+        "fields": {
+            "answer": 20856,
+            "state": 1022,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20862,
+        "fields": {
+            "answer": 20856,
+            "state": 1034,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20863,
+        "fields": {
+            "answer": 20856,
+            "state": 1024,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20864,
+        "fields": {
+            "answer": 20856,
+            "state": 1012,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20868,
+        "fields": {
+            "answer": 20865,
+            "state": 1042,
+            "candidate": 200,
+            "affected_candidate": 200,
+            "state_multiplier": 0.005
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20869,
+        "fields": {
+            "answer": 20865,
+            "state": 1002,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20870,
+        "fields": {
+            "answer": 20865,
+            "state": 1027,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.01
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20871,
+        "fields": {
+            "answer": 20865,
+            "state": 1030,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.0075
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20875,
+        "fields": {
+            "answer": 20872,
+            "state": 1009,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.008
+        }
+    },
+    {
+        "model": "campaign_trail.answer_score_state",
+        "pk": 20876,
+        "fields": {
+            "answer": 20872,
+            "state": 1032,
+            "candidate": 201,
+            "affected_candidate": 201,
+            "state_multiplier": 0.005
+        }
+    }
+]
 
 campaignTrail_temp.answer_feedback_json = [
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 20717,
-        "fields": {
-            "answer": 20710,
-            "candidate": 201,
-            "answer_feedback": "The public backlash at your defense of Biden is immediate and immense. You receive little to no sleep as you spend hours taking calls from donors, high-ranking officials, and certain members of Congress. After a week of total chaos, you finally threaten Biden with the 25th. He resigns 3 days later."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
-        "pk": 20722,
-        "fields": {
-            "answer": 20719,
-            "candidate": 201,
-            "answer_feedback": "Jill and Hunter flatly tell you that it's Joe's decision alone if he wishes to resign the Presidency, and they refuse to influence his decision. After more than a week of chaotic confusion among the Party, you finally threaten him with the 25th. He resigns shortly after."
-        }
-    },
     {
         "model": "campaign_trail.answer_feedback",
         "pk": 20732,
@@ -5431,15 +5793,6 @@ campaignTrail_temp.answer_feedback_json = [
     },
     {
         "model": "campaign_trail.answer_feedback",
-        "pk": 20743,
-        "fields": {
-            "answer": 20742,
-            "candidate": 201,
-            "answer_feedback": "As you imply that the 25th would not be off the table in the coming weeks, Biden goes ballistic. He raises his voice as much as his age allows and rambles about how you would never be where you are without him, about how he had always known you weren't loyal. You stare at him silently, with a look of pity and guilt, he knows the walls are caving in. He eventually asks for 10 days to prepare for his departure. You agree."
-        }
-    },
-    {
-        "model": "campaign_trail.answer_feedback",
         "pk": 20747,
         "fields": {
             "answer": 20745,
@@ -5453,7 +5806,7 @@ campaignTrail_temp.answer_feedback_json = [
         "fields": {
             "answer": 20713,
             "candidate": 201,
-            "answer_feedback": "You met with Sanders, Ocasio-Cortez, and Mamdani in New York to discuss how to change your messaging to appeal to the progressive youth. You leave with nothing set in stone, zero connections made, and no new knowledge. You have a permanent scowl on your face as you fly back to D.C. "
+            "answer_feedback": "You met with Sanders, Ocasio-Cortez, and Mamdani in New York to discuss how to change your messaging to appeal to the progressive youth. You leave with nothing set in stone, zero connections made, and no new knowledge. You speak to nobody as you fly back to Washington."
         }
     },
     {
@@ -5479,8 +5832,8 @@ campaignTrail_temp.answer_feedback_json = [
         "pk": 20760,
         "fields": {
             "answer": 20714,
-            "candidate": 200,
-            "answer_feedback": "Luckily, they don't even bother making a stink of it in committee and confirmation, seeing him as more of a liability to you than anything. Pro-Palestinian protesters yell at you outside the hotel you're staying at. They some fucking how found out where you're staying. They call you a Zionist, a fascist no better than the Republicans. You don't lose that much sleep, though."
+            "candidate": 201,
+            "answer_feedback": "Luckily, they don't even bother making a stink of it in committee and confirmation, seeing him as more of a liability to you than anything. Pro-Palestinian protesters yell at you outside the hotel you're staying at. They somehow found out where you're staying. They call you a Zionist, a fascist no better than the Republicans. You don't lose that much sleep, though."
         }
     },
     {
@@ -5488,8 +5841,8 @@ campaignTrail_temp.answer_feedback_json = [
         "pk": 20763,
         "fields": {
             "answer": 20758,
-            "candidate": 200,
-            "answer_feedback": "Obviously, the cunts wouldn't even consider it. You're blasted as a delusional far left lunatic by the right wing media. You're branded an anti-semite by Shapiro supporters (All four of them). You eventually concede and nominate Shapiro, who gets confirmed pretty quickly. At least the blow back from Progressives wasn't that bad."
+            "candidate": 201,
+            "answer_feedback": "Obviously, they wouldn't even consider it. You're blasted as a delusional far left lunatic by the right wing media, and you're branded an anti-Semite by Shapiro supporters. You eventually concede and nominate Shapiro, who gets confirmed pretty quickly. At least the progressives aren't that angry at you."
         }
     },
     {
@@ -5497,8 +5850,71 @@ campaignTrail_temp.answer_feedback_json = [
         "pk": 20765,
         "fields": {
             "answer": 20759,
-            "candidate": 200,
-            "answer_feedback": "They get past committee, but Mike Johnson orders the Republican caucus to shoot them down in the house. The public backlash towards the Republicans are minimal but still help your flagging poll numbers. You nominate Shapiro and he flies to confirmation."
+            "candidate": 201,
+            "answer_feedback": "You nominate Chris Coons, who gets past committee, but Johnson orders the Republican caucus to shoot them down in the House. The public backlash towards the Republicans are minimal but still help your flagging poll numbers. You nominate Shapiro and he flies to confirmation."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20795,
+        "fields": {
+            "answer": 20715,
+            "candidate": 201,
+            "answer_feedback": "You stare down Bibi in a meeting as you tell him you'll cut the aid towards his government if he doesn't do more for those suffering in Gaza. He tells you that he won't feed and clothe more terrorists, and that Israel will stand alone if necessary. You've found yourself even more disgusted towards him. Who the fuck does he think he is?"
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20796,
+        "fields": {
+            "answer": 20794,
+            "candidate": 201,
+            "answer_feedback": "Publicly, Maduro tries to put on a mask of courage and bravery against Western imperialism. Privately, though, he knows that he's been caught in lockstep with you. He practically begs for you to leave him and his government alone as ships amass along the Venezuelan coast."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20800,
+        "fields": {
+            "answer": 20793,
+            "candidate": 201,
+            "answer_feedback": "Your attempt to push for a ceasefire largely leads to nothing as Putin and Zelensky both decline to meet to discuss the war. However, the EU has agreed to ramp up aid towards Ukraine to prevent a logistical collapse of the front line in Donetsk. Thank God."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20857,
+        "fields": {
+            "answer": 20856,
+            "candidate": 201,
+            "answer_feedback": "As you speak of rejuvenating American industry, of helping unions to prop up the workers, Democrats cheer while the workers stare. These people saved Biden's reelection, but you can't tell through their eyes if they're willing to do the same for you."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20866,
+        "fields": {
+            "answer": 20865,
+            "candidate": 201,
+            "answer_feedback": "You leave the windy city of Chicago for the blistering heat of Phoenix. You are questioned in a town hall by concerned Latino voters. Why should we vote for you when we can't find work? Why should we vote for you if Vance only wants to deport the illegals? You stumble repeatedly as you try to respond. Your production team has no usable footage."
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20873,
+        "fields": {
+            "answer": 20872,
+            "candidate": 201,
+            "answer_feedback": "You are filmed talking to voters in Brantley County, Georgia. As you are rambling about how the Republican party won't save them, they don't listen. A man asks you how they could vote for you when you've promised the world and delivered nothing. You are speechless. The production team cuts that out of the video. "
+        }
+    },
+    {
+        "model": "campaign_trail.answer_feedback",
+        "pk": 20878,
+        "fields": {
+            "answer": 20877,
+            "candidate": 201,
+            "answer_feedback": "The two of you have a surprisingly warm conversation. Biden's bitterness has faded. He looks much better than he did in office, with the sight reminding you of the honeymoon period when he was first elected. You talk until midnight and you have dinner with his family. You leave feeling like a weight has been lifted off your shoulders."
         }
     }
 ]
@@ -5573,7 +5989,7 @@ Ha, it is, it really is. And you already know the rest, I guess I'm rambling her
         return `<p>
 Administration of Kamala D. Harris. <p>
 Excerpt from Remarks on signing the Women's Health Protection Act and the Equality Act <p>
-(After President Harris' landslide victory over Senator Vance, the Democratic Party reclaimed control over Congress for the first time since 2022. Senate Majority Leader Chris Van Hollen would abolish the filibuster and would pass the WHPA, overturning the Roe V. Wade decision and codifying abortion rights, while passing the most extensive Civil Rights bill in history. Harris would then be reelected narrowly in the 2032 Election.) <p>
+(After President Harris' landslide victory over Senator Vance, the Democratic Party reclaimed control over Congress for the first time since 2022. Senate Majority Leader Chris Van Hollen would abolish the filibuster and would pass the WHPA, overturning the Roe V. Wade decision and codifying abortion rights, while passing the most extensive Civil Rights bill in history. Her successor Andrew Beshear would then be elected narrowly in the 2032 Election.) <p>
 
 ------- [HARRIS]: When President Biden signed the Respect for Marriage Act, I felt it was one step to a world of true equality, of true freedom. Our history of stripping the right of marriage from same-sex and interracial couples was one of the many scars our nation has endured for decades. That occasion was one of the highlights of my tenure as Vice President, and I will always value the time I spent with Joe Biden. Without the President, I would not be here right now, signing one of the most important bills of our nation's history, enshrining equal rights to women. <p>
 
@@ -5590,7 +6006,7 @@ Our election victory indicates the support of the American People in our fight f
         return `<p>
 - FROM THE ARCHIVES - THE RESIGNATION OF JOSHUA D. SHAPIRO FROM THE VICE PRESIDENCY - <p>
 
-(It is widely speculated that Shapiro resigned from the Vice Presidency because of built up tension and separation from the President and her allies. Increased media attacks and revilement from the Democratic Party's base, along with the President moving to recognize the State of Palestine, led to the resignation. President Harris would go on lose reelection by a substantial margin.) <p>
+(It is widely speculated that Shapiro resigned from the Vice Presidency because of built up tension and separation from the President and her allies. Increased media attacks and revilement from the Democratic Party's base, along with the President moving to recognize the State of Palestine, led to the resignation. Democratic candidate Andrew Beshear would go on lose the 2032 election by a substantial margin.) <p>
 
 [START] <p>
 
@@ -5615,18 +6031,18 @@ Joshua D. Shapiro <p>
         setImage("https://i.imgur.com/P9Sr6BL.jpeg");
         return `<p>
 Phone Conversation on December 19, 2030 <p>
-(After President Harris' narrow election victory, the Republicans would still hold the House and Senate. Her first full term would still be under total gridlock on the domestic front. Her term was dedicated solely on foreign policy. Alleged illegal arms deals through the EU to Neutral Ukraine would lead to her impeachment. She would be defeated in a landslide by Senator Cassidy in the 2032 Election.)<p>
+(After President Harris' narrow election victory, the Republicans would still hold the House and Senate. Her first full term would still be under total gridlock on the domestic front. Her term was dedicated solely on foreign policy. Alleged illegal arms deals through the EU to Neutral Ukraine would lead to her impeachment. Vice President Shapiro would be defeated in a landslide by Senator Rubio in the 2032 Election.)<p>
 
 [START] <p>
 
 [HARRIS]: We have less than a month before the new Congress is sworn in, and once they are, it's almost certain I'll be impeached. <p>
-[FLAKE]: Look, I know things are hard right now, but it's not guaranteed they'll find anything to move it to a vote, they're just investigating. <p>
-[HARRIS]: Are you kidding? These people are vicious, they'll never let us do anything. They'd let the country stagnate and collapse so they could swoop in to prove that they were right. You're a Republican yourself, you know this more than anyone. <p>
-[FLAKE]: Look, err.... I know you only picked me because they wouldn't let you pick anyone else, but ---- <p>
+[BLINKEN]: Look, I know things are hard right now, but it's not guaranteed they'll find anything to move it to a vote, they're just investigating. <p>
+[HARRIS]: Are you kidding? These people are vicious, they'll never let us do anything. They'd let the country stagnate and collapse so they could swoop in to prove that they were right. You know this more than anyone. <p>
+[FLAKE]: Look, err.... <p>
 [HARRIS]: I thought we could agree on this one thing, just because Russia isn't drone bombing Kyiv anymore doesn't mean there aren't constant skirmishes along the Dnipro. Ukraine is essential for Europe's defence, surely you understand this? <p>
-[FLAKE]: Look, if you care so much about your parties standing so much, don't run for reelection, you're..... not exactly popular. <p>
-[HARRIS]: You think I haven't thought about that? I'm not fucking Biden, I can step down when I want. <p>
-[FLAKE]: Look... I won't testify against you, but ------- [PHONE DISCONNECTS] <p>
+[BLINKEN]: Look, I get it, but we can't just keep supplying them. It's almost been a decade of this shit. We have to find another end to this war. <p>
+[HARRIS]: You think I haven't thought about that? The Russians refuse to give up. <p>
+[Blinken]: Christ, just let me ----------------- [PHONE DISCONNECTS] <p>
 
 [END]
 `;
@@ -5658,7 +6074,7 @@ CONVERSATION BETWEEN JOE AND JILL BIDEN, NOVEMBER 8th, 2000. <p>
         return `<p>
 Phone Conversation on November 17, 2032. <p>
 
-(After Harris' loss in the 2028 election, President Vance would push for extensive reform with bolstered Congressional majorities. The failure of the SAVE Act despite the abolition of the Filibuster, and the subsequent economic recession in mid 2030 would lead to a blue tsunami in 2028, with Democrats making gains in the senate and retaking the house. In 2032, the election would be narrowly deadlocked.) <p>
+(After Harris' loss in the 2028 election, President Vance would push for extensive reform with bolstered Congressional majorities. The failure of the SAVE Act despite the abolition of the Filibuster, and the subsequent economic recession in mid 2030 would lead to a blue tsunami in 2030, with Democrats making gains in the senate and retaking the house. In 2032, the election would be narrowly deadlocked.) <p>
 
 [START] <p>
 
@@ -5682,7 +6098,7 @@ Phone Conversation on November 17, 2032. <p>
 
 [THUNE]: Right. <p>
  
-(Thune disconnects the call).
+(Thune disconnects the call). <p>
 
 [END].`;
     }
@@ -5778,7 +6194,7 @@ campaignTrail_temp.jet_data = [{
             "operator": ">",
             "value": 0,
             "endingImage": "https://i.imgur.com/WGtOwUx.jpeg",
-            "endingText": "<p>\nAdministration of Kamala D. Harris. <p>\nExcerpt from Remarks on signing the Women's Health Protection Act and the Equality Act <p>\n(After President Harris' landslide victory over Senator Vance, the Democratic Party reclaimed control over Congress for the first time since 2022. Senate Majority Leader Chris Van Hollen would abolish the filibuster and would pass the WHPA, overturning the Roe V. Wade decision and codifying abortion rights, while passing the most extensive Civil Rights bill in history. Harris would then be reelected narrowly in the 2032 Election.) <p>\n\n------- [HARRIS]: When President Biden signed the Respect for Marriage Act, I felt it was one step to a world of true equality, of true freedom. Our history of stripping the right of marriage from same-sex and interracial couples was one of the many scars our nation has endured for decades. That occasion was one of the highlights of my tenure as Vice President, and I will always value the time I spent with Joe Biden. Without the President, I would not be here right now, signing one of the most important bills of our nation's history, enshrining equal rights to women. <p>\n\nWhen the Supreme Court had an overwhelming conservative majority, they believed that regression was what the people wanted. They were wrong. Today marks the 10 year mark of progress since the dark days of the pandemic, progress that has marched on since the days of FDR to the days of Joe Biden. When women suffered horrific abuse, the Supreme Court ordered them to take it, they told them that their bodies were not their own. That decision was wrong. They intended not just to strip women of their rights, but to strike down all of the progress made in advancing the LGBTQ+ community. <p>\n\nOur election victory indicates the support of the American People in our fight for equality and progress. As Lyndon Baines Johnson signed the Civil Rights Act, and Joe Biden signed the Respect for Marriage Act, I sign this act today as another stepping stone towards the undying dream of liberty, equality, and justice for all. (Applause from the small crowd) ------------------------------------ <p>\n\n[End]\n\n",
+            "endingText": "<p>\nAdministration of Kamala D. Harris. <p>\nExcerpt from Remarks on signing the Women's Health Protection Act and the Equality Act <p>\n(After President Harris' landslide victory over Senator Vance, the Democratic Party reclaimed control over Congress for the first time since 2022. Senate Majority Leader Chris Van Hollen would abolish the filibuster and would pass the WHPA, overturning the Roe V. Wade decision and codifying abortion rights, while passing the most extensive Civil Rights bill in history. Her successor Andrew Beshear would then be elected narrowly in the 2032 Election.) <p>\n\n------- [HARRIS]: When President Biden signed the Respect for Marriage Act, I felt it was one step to a world of true equality, of true freedom. Our history of stripping the right of marriage from same-sex and interracial couples was one of the many scars our nation has endured for decades. That occasion was one of the highlights of my tenure as Vice President, and I will always value the time I spent with Joe Biden. Without the President, I would not be here right now, signing one of the most important bills of our nation's history, enshrining equal rights to women. <p>\n\nWhen the Supreme Court had an overwhelming conservative majority, they believed that regression was what the people wanted. They were wrong. Today marks the 10 year mark of progress since the dark days of the pandemic, progress that has marched on since the days of FDR to the days of Joe Biden. When women suffered horrific abuse, the Supreme Court ordered them to take it, they told them that their bodies were not their own. That decision was wrong. They intended not just to strip women of their rights, but to strike down all of the progress made in advancing the LGBTQ+ community. <p>\n\nOur election victory indicates the support of the American People in our fight for equality and progress. As Lyndon Baines Johnson signed the Civil Rights Act, and Joe Biden signed the Respect for Marriage Act, I sign this act today as another stepping stone towards the undying dream of liberty, equality, and justice for all. (Applause from the small crowd) ------------------------------------ <p>\n\n[End]\n\n",
             "amount": "349"
         },
         "1768898727461": {
@@ -5787,7 +6203,7 @@ campaignTrail_temp.jet_data = [{
             "operator": ">",
             "value": 0,
             "endingImage": "https://i.imgur.com/A5Gz6Ry_d.webp?maxwidth=760&fidelity=grand",
-            "endingText": "<p>\n- FROM THE ARCHIVES - THE RESIGNATION OF JOSHUA D. SHAPIRO FROM THE VICE PRESIDENCY - <p>\n\n(It is widely speculated that Shapiro resigned from the Vice Presidency because of built up tension and separation from the President and her allies. Increased media attacks and revilement from the Democratic Party's base, along with the President moving to recognize the State of Palestine, led to the resignation. President Harris would go on lose reelection by a substantial margin.) <p>\n\n[START] <p>\n\nJune 13th, 2033. <p>\n\nMadam President, <p>\n\nAs we have thoroughly discussed, the differences between me and the rest of the Administration have become far too wide for me to reconcile. The administration's actions have gone against what I firmly believe in. The stress of the Office has been far too much to bare, and my family has been negatively effected as a result. It is within the best interests of my family and the Administration that I vacate the Vice Presidency. <p>\n\nAccordingly, I have today resigned the Office of the Vice President of the United States. A copy of the instrument of resignation is enclosed. <p>\n\nIt has been the honor of my life to serve within this Administration. I express my deepest gratitude to the American people for reaffirming my election to this office. <p>\n\nSincerely, <P>\n\nJoshua D. Shapiro <p>\n\n[END]\n",
+            "endingText": "<p>\n- FROM THE ARCHIVES - THE RESIGNATION OF JOSHUA D. SHAPIRO FROM THE VICE PRESIDENCY - <p>\n\n(It is widely speculated that Shapiro resigned from the Vice Presidency because of built up tension and separation from the President and her allies. Increased media attacks and revilement from the Democratic Party's base, along with the President moving to recognize the State of Palestine, led to the resignation. Democratic candidate Andrew Beshear would go on lose the 2032 election by a substantial margin.) <p>\n\n[START] <p>\n\nJune 13th, 2033. <p>\n\nMadam President, <p>\n\nAs we have thoroughly discussed, the differences between me and the rest of the Administration have become far too wide for me to reconcile. The administration's actions have gone against what I firmly believe in. The stress of the Office has been far too much to bare, and my family has been negatively effected as a result. It is within the best interests of my family and the Administration that I vacate the Vice Presidency. <p>\n\nAccordingly, I have today resigned the Office of the Vice President of the United States. A copy of the instrument of resignation is enclosed. <p>\n\nIt has been the honor of my life to serve within this Administration. I express my deepest gratitude to the American people for reaffirming my election to this office. <p>\n\nSincerely, <P>\n\nJoshua D. Shapiro <p>\n\n[END]\n",
             "amount": "306"
         },
         "1768898727598": {
@@ -5796,7 +6212,7 @@ campaignTrail_temp.jet_data = [{
             "operator": ">",
             "value": 0,
             "endingImage": "https://i.imgur.com/P9Sr6BL.jpeg",
-            "endingText": "<p>\nPhone Conversation on December 19, 2030 <p>\n(After President Harris' narrow election victory, the Republicans would still hold the House and Senate. Her first full term would still be under total gridlock on the domestic front. Her term was dedicated solely on foreign policy. Alleged illegal arms deals through the EU to Neutral Ukraine would lead to her impeachment. She would be defeated in a landslide by Senator Cassidy in the 2032 Election.)<p>\n\n[START] <p>\n\n[HARRIS]: We have less than a month before the new Congress is sworn in, and once they are, it's almost certain I'll be impeached. <p>\n[FLAKE]: Look, I know things are hard right now, but it's not guaranteed they'll find anything to move it to a vote, they're just investigating. <p>\n[HARRIS]: Are you kidding? These people are vicious, they'll never let us do anything. They'd let the country stagnate and collapse so they could swoop in to prove that they were right. You're a Republican yourself, you know this more than anyone. <p>\n[FLAKE]: Look, err.... I know you only picked me because they wouldn't let you pick anyone else, but ---- <p>\n[HARRIS]: I thought we could agree on this one thing, just because Russia isn't drone bombing Kyiv anymore doesn't mean there aren't constant skirmishes along the Dnipro. Ukraine is essential for Europe's defence, surely you understand this? <p>\n[FLAKE]: Look, if you care so much about your parties standing so much, don't run for reelection, you're..... not exactly popular. <p>\n[HARRIS]: You think I haven't thought about that? I'm not fucking Biden, I can step down when I want. <p>\n[FLAKE]: Look... I won't testify against you, but ------- [PHONE DISCONNECTS] <p>\n\n[END]\n",
+            "endingText": "<p>\nPhone Conversation on December 19, 2030 <p>\n(After President Harris' narrow election victory, the Republicans would still hold the House and Senate. Her first full term would still be under total gridlock on the domestic front. Her term was dedicated solely on foreign policy. Alleged illegal arms deals through the EU to Neutral Ukraine would lead to her impeachment. Vice President Shapiro would be defeated in a landslide by Senator Rubio in the 2032 Election.)<p>\n\n[START] <p>\n\n[HARRIS]: We have less than a month before the new Congress is sworn in, and once they are, it's almost certain I'll be impeached. <p>\n[BLINKEN]: Look, I know things are hard right now, but it's not guaranteed they'll find anything to move it to a vote, they're just investigating. <p>\n[HARRIS]: Are you kidding? These people are vicious, they'll never let us do anything. They'd let the country stagnate and collapse so they could swoop in to prove that they were right. You know this more than anyone. <p>\n[FLAKE]: Look, err.... <p>\n[HARRIS]: I thought we could agree on this one thing, just because Russia isn't drone bombing Kyiv anymore doesn't mean there aren't constant skirmishes along the Dnipro. Ukraine is essential for Europe's defence, surely you understand this? <p>\n[BLINKEN]: Look, I get it, but we can't just keep supplying them. It's almost been a decade of this shit. We have to find another end to this war. <p>\n[HARRIS]: You think I haven't thought about that? The Russians refuse to give up. <p>\n[Blinken]: Christ, just let me ----------------- [PHONE DISCONNECTS] <p>\n\n[END]\n",
             "amount": "270"
         },
         "1768898770241": {
@@ -5814,7 +6230,7 @@ campaignTrail_temp.jet_data = [{
             "operator": ">",
             "value": 0,
             "endingImage": "https://i.imgur.com/opVFS3x.jpeg",
-            "endingText": "<p>\nPhone Conversation on November 17, 2032. <p>\n\n(After Harris' loss in the 2028 election, President Vance would push for extensive reform with bolstered Congressional majorities. The failure of the SAVE Act despite the abolition of the Filibuster, and the subsequent economic recession in mid 2030 would lead to a blue tsunami in 2028, with Democrats making gains in the senate and retaking the house. In 2032, the election would be narrowly deadlocked.) <p>\n\n[START] <p>\n\n[VANCE]: Christ, we've really got ourselves into a fix with this one, huh? <p>\n\n[THUNE]: Yeah, you did. <p>\n\n[VANCE]: So how are things looking, on the contingent front? Major changes or... <p>\n\n[THUNE]: No, sir. Everything is going fine, you'll win in the House, and Rubio will be confirmed by the Senate. <p>\n\n[VANCE]: Does anyone in the Senate seem disloyal? Like they might vote for Warnock just to spite me? <p>\n\n[THUNE]: (Silence) <p>\n\n[VANCE]: Hello? <p>\n\n[THUNE]: No. No Republican will be voting Warnock in. I've already made sure of it. <p>\n\n[VANCE]: Alright, good. <p>\n\n[THUNE]: Right. <p>\n \n(Thune disconnects the call).\n\n[END].",
+            "endingText": "<p>\nPhone Conversation on November 17, 2032. <p>\n\n(After Harris' loss in the 2028 election, President Vance would push for extensive reform with bolstered Congressional majorities. The failure of the SAVE Act despite the abolition of the Filibuster, and the subsequent economic recession in mid 2030 would lead to a blue tsunami in 2030, with Democrats making gains in the senate and retaking the house. In 2032, the election would be narrowly deadlocked.) <p>\n\n[START] <p>\n\n[VANCE]: Christ, we've really got ourselves into a fix with this one, huh? <p>\n\n[THUNE]: Yeah, you did. <p>\n\n[VANCE]: So how are things looking, on the contingent front? Major changes or... <p>\n\n[THUNE]: No, sir. Everything is going fine, you'll win in the House, and Rubio will be confirmed by the Senate. <p>\n\n[VANCE]: Does anyone in the Senate seem disloyal? Like they might vote for Warnock just to spite me? <p>\n\n[THUNE]: (Silence) <p>\n\n[VANCE]: Hello? <p>\n\n[THUNE]: No. No Republican will be voting Warnock in. I've already made sure of it. <p>\n\n[VANCE]: Alright, good. <p>\n\n[THUNE]: Right. <p>\n \n(Thune disconnects the call). <p>\n\n[END].",
             "amount": "190"
         },
         "1769124305385": {
@@ -5838,8 +6254,74 @@ campaignTrail_temp.jet_data = [{
     },
     "mapping_enabled": false,
     "mapping_data": {},
-    "cyoa_enabled": false,
-    "cyoa_data": {}
+    "cyoa_enabled": true,
+    "cyoa_data": {
+        "1769187558824": {
+            "answer": "20793",
+            "question": "20686",
+            "id": 1769187558824
+        },
+        "1769368803468": {
+            "answer": "20794",
+            "question": "20687",
+            "id": 1769368803468
+        },
+        "1769368887986": {
+            "answer": "20715",
+            "question": "20688",
+            "id": 1769368887986
+        },
+        "1769749540687": {
+            "answer": 20712,
+            "question": 20682,
+            "id": 1769749540687
+        },
+        "1769749540982": {
+            "answer": "20843",
+            "question": "20689",
+            "id": 1769749540982
+        },
+        "1769749541307": {
+            "answer": "20844",
+            "question": "20689",
+            "id": 1769749541307
+        },
+        "1769749541989": {
+            "answer": "20845",
+            "question": "20689",
+            "id": 1769749541989
+        },
+        "1769749542266": {
+            "answer": "20846",
+            "question": "20689",
+            "id": 1769749542266
+        },
+        "1769749542591": {
+            "answer": "20847",
+            "question": "20689",
+            "id": 1769749542591
+        },
+        "1769749543135": {
+            "answer": "20848",
+            "question": "20689",
+            "id": 1769749543135
+        },
+        "1769749543423": {
+            "answer": "20849",
+            "question": "20689",
+            "id": 1769749543423
+        },
+        "1769749543758": {
+            "answer": "20850",
+            "question": "20689",
+            "id": 1769749543758
+        },
+        "1769749610258": {
+            "answer": "20851",
+            "question": "20689",
+            "id": 1769749610258
+        }
+    }
 }
 ]
 
