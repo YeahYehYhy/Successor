@@ -270,23 +270,5 @@ jukeboxsong = function() {
         document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
 }
 
-// Set up new music player
-
-newMusicPlayer();
-
-window.setSoundtrack=(id)=>{e.selectedSoundtrack=id|0;e.currentTrackIndex=0;const tl=soundtracks[e.selectedSoundtrack]&&soundtracks[e.selectedSoundtrack].tracklist,t=tl&&tl[0],a=document.getElementById("campaigntrailmusic"),img=document.getElementById("musicPlayerTrackImage"),sn=document.getElementById("song-name-display"),an=document.getElementById("artist-name-display");if(t&&a){a.src=t.url;a.currentTime=0;a.play();if(img)img.src=getTrackImage(t.id);const s=splitTrackName(t.name);if(sn)sn.innerHTML=s.title;if(an)an.innerHTML=s.artist;}};
-setSoundtrack(e.selectedSoundtrack);
-
-//#startcode
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#0a6b22";
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#0a6b22";
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-$(".container")[0].style.backgroundColor = "#0a6b22";
-document.getElementById("header").src = "https://i.imgur.com/iv9SdkA.png";
-document.body.background = "https://i.imgur.com/UoOl7vB.png";
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#0a6b22!important;}</style>";
-corrr = `<div><img src="https://i.imgur.com/LpkuPJa.png" style="margin-top: 4px; style="margin-bottom": 2px;></div>`;
 
 //#endcode
